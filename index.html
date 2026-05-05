@@ -24,13 +24,16 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      padding: 2rem;
+      padding: 4rem 2rem;
     }
 
     main {
-      max-width: 560px;
+      max-width: 640px;
       width: 100%;
+    }
+
+    header {
+      margin-bottom: 3rem;
     }
 
     h1 {
@@ -43,27 +46,40 @@
     .tagline {
       color: var(--text-dim);
       font-size: 0.875rem;
-      margin-bottom: 2.5rem;
+    }
+
+    .section-title {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+      margin-top: 2.5rem;
     }
 
     .card {
       border: 1px solid var(--border);
       border-radius: 8px;
-      padding: 1.5rem;
-      margin-bottom: 1rem;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 0.75rem;
       background: var(--surface);
       text-decoration: none;
       color: inherit;
-      display: block;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
       transition: border-color 0.2s;
     }
 
     .card:hover { border-color: var(--accent); }
 
+    .card-body { flex: 1; }
+
     .card h2 {
-      font-size: 1rem;
+      font-size: 0.9375rem;
       font-weight: 600;
-      margin-bottom: 0.375rem;
+      margin-bottom: 0.25rem;
     }
 
     .card p {
@@ -72,15 +88,15 @@
       line-height: 1.6;
     }
 
-    .card .arrow {
-      float: right;
+    .arrow {
       color: var(--accent);
-      font-size: 1.25rem;
-      line-height: 1;
+      font-size: 1.125rem;
+      line-height: 1.6;
+      flex-shrink: 0;
     }
 
     footer {
-      margin-top: 3rem;
+      margin-top: 4rem;
       font-size: 0.75rem;
       color: var(--text-dim);
     }
@@ -88,19 +104,89 @@
 </head>
 <body>
   <main>
-    <h1>KLD</h1>
-    <p class="tagline">量化交易 · 缠论研究</p>
+    <header>
+      <h1>KLD</h1>
+      <p class="tagline">量化交易 · 缠论研究</p>
+    </header>
+
+    <p class="section-title">缠论插件</p>
+
+    <a class="card" href="https://github.com/mywildquant/ChanlunX">
+      <div class="card-body">
+        <h2>ChanlunX</h2>
+        <p>通达信缠论可视化插件，自动识别 K 线包含、笔、线段、中枢与走势，支持通达信、交易师、金字塔、大智慧</p>
+      </div>
+      <span class="arrow">&rarr;</span>
+    </a>
+
+    <a class="card" href="https://kldcty.github.io/fqbook/fqchan01/K线包含和分型处理.html">
+      <div class="card-body">
+        <h2>fqchan01</h2>
+        <p>K 线包含处理与分型识别算法研究，探索消除分型顶点毛刺的新型处理方法</p>
+      </div>
+      <span class="arrow">&rarr;</span>
+    </a>
+
+    <a class="card" href="https://kldcty.github.io/fqbook/fqchan04/插件简介.html">
+      <div class="card-body">
+        <h2>fqchan04</h2>
+        <p>番茄缠论股软插件，DLL 形式加载于主流股软，绘制笔、线段、中枢与走势</p>
+      </div>
+      <span class="arrow">&rarr;</span>
+    </a>
+
+    <a class="card" href="https://kldcty.github.io/fqbook/fqcopilot/缠论形态模型.html">
+      <div class="card-body">
+        <h2>fqcopilot</h2>
+        <p>缠论形态模型库，提供标准化形态定义与识别，供量化策略调用</p>
+      </div>
+      <span class="arrow">&rarr;</span>
+    </a>
+
+    <p class="section-title">量化系统</p>
+
+    <a class="card" href="https://kldcty.github.io/fqbook/fqlite/Fqlite指南.html">
+      <div class="card-body">
+        <h2>fqlite</h2>
+        <p>轻量级 Python 缠论量化框架，基于 uv 管理，适合策略研究与快速原型验证</p>
+      </div>
+      <span class="arrow">&rarr;</span>
+    </a>
+
+    <a class="card" href="https://kldcty.github.io/fqbook/freshquant/番茄量化系统使用指南.html">
+      <div class="card-body">
+        <h2>freshquant</h2>
+        <p>番茄量化系统，支持股票、债券、ETF、期货多品种，命令行运维，Docker 部署</p>
+      </div>
+      <span class="arrow">&rarr;</span>
+    </a>
+
+    <p class="section-title">理论原文</p>
+
+    <a class="card" href="https://kldcty.github.io/fqbook/108/0187-486e105c01000461-001.html">
+      <div class="card-body">
+        <h2>缠中说禅 108 课</h2>
+        <p>教你炒股票系列全文收录，从分型笔线段到走势中枢的完整理论体系</p>
+      </div>
+      <span class="arrow">&rarr;</span>
+    </a>
+
+    <p class="section-title">更多</p>
 
     <a class="card" href="https://kldcty.github.io/fqbook/">
+      <div class="card-body">
+        <h2>野生量化文档站</h2>
+        <p>以上所有项目的完整文档入口</p>
+      </div>
       <span class="arrow">&rarr;</span>
-      <h2>野生量化</h2>
-      <p>缠论插件、量化系统、缠中说禅 108 课完整技术文档</p>
     </a>
 
     <a class="card" href="https://github.com/kldcty">
+      <div class="card-body">
+        <h2>GitHub</h2>
+        <p>开源项目与代码仓库</p>
+      </div>
       <span class="arrow">&rarr;</span>
-      <h2>GitHub</h2>
-      <p>开源项目与代码仓库</p>
     </a>
   </main>
 
