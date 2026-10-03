@@ -1,0 +1,15 @@
+{
+  "name": "KLD · 番茄量化",
+  "short_name": "番茄量化",
+  "description": "KLD 的量化项目导航：缠论插件、量化系统与文档站入口。",
+  "lang": "zh-CN",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

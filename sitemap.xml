@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  kldcty.github.io 的 sitemap 索引。
+
+  与 kldcty.tech 同构：根层只有导航首页一页，文档页交给 MkDocs 生成的
+  /fqbook/sitemap.xml。用 sitemapindex 避免同一 URL 重复提交。
+-->
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://kldcty.github.io/sitemap-home.xml</loc>
+    <lastmod>2026-10-03</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://kldcty.github.io/fqbook/sitemap.xml</loc>
+  </sitemap>
+</sitemapindex>

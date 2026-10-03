@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KLD · 番茄量化 — 缠论插件与量化系统导航</title>
+  <meta name="description" content="KLD 的量化项目导航：缠论插件 ChanlunX、fqchan01、fqchan04、fqcopilot，量化系统 fqlite、freshquant，以及缠中说禅 108 课原文与订阅指南。">
+  <meta name="author" content="KLD">
+  <link rel="canonical" href="https://kldcty.github.io/">
+
+  <!-- ============================================================
+       Open Graph —— 微信 / 微博 / Slack / Discord 等分享卡片
+       og:url 必须是本页规范地址；本站为 GitHub user site，落在根路径
+       ============================================================ -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="KLD">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:url" content="https://kldcty.github.io/">
+  <meta property="og:title" content="KLD · 番茄量化 — 缠论插件与量化系统导航">
+  <meta property="og:description" content="KLD 的量化项目导航：缠论插件 ChanlunX、fqchan01、fqchan04、fqcopilot，量化系统 fqlite、freshquant，以及缠中说禅 108 课原文与订阅指南。">
+
+  <!-- Twitter / X —— 无配图，故用 summary 而非 summary_large_image -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="KLD · 番茄量化 — 缠论插件与量化系统导航">
+  <meta name="twitter:description" content="KLD 的量化项目导航：缠论插件 ChanlunX、fqchan01、fqchan04、fqcopilot，量化系统 fqlite、freshquant，以及缠中说禅 108 课原文与订阅指南。">
+
+  <meta name="theme-color" content="#0a0a0a">
+
+  <!-- 站点图标：根相对路径，两个站点各自解析到自己的根 -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --surface: #141414;
+      --border: #222;
+      --text: #e4e4e4;
+      --text-dim: #777;
+      --accent: #e8a84c;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, "Noto Sans SC", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 4rem 2rem;
+    }
+
+    main {
+      max-width: 640px;
+      width: 100%;
+    }
+
+    header {
+      margin-bottom: 3rem;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.25rem;
+    }
+
+    .tagline {
+      color: var(--text-dim);
+      font-size: 0.875rem;
+    }
+
+    .section-title {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+      margin-top: 2.5rem;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 0.75rem;
+      background: var(--surface);
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      transition: border-color 0.2s;
+    }
+
+    .card:hover { border-color: var(--accent); }
+
+    .card-body { flex: 1; }
+
+    .card h2 {
+      font-size: 0.9375rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .card p {
+      font-size: 0.8125rem;
+      color: var(--text-dim);
+      line-height: 1.6;
+    }
+
+    .arrow {
+      color: var(--accent);
+      font-size: 1.125rem;
+      line-height: 1.6;
+      flex-shrink: 0;
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 0.75rem;
+      color: var(--text-dim);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>KLD</h1>
+      <p class="tagline">量化交易 · 缠论研究</p>
+    </header>
+
+    <p class="section-title">缠论插件</p>
+
+    <a class="card" href="https://github.com/kldcty/ChanlunX">
+      <div class="card-body">
+        <h2>ChanlunX</h2>
+        <p>通达信缠论可视化插件，自动识别 K 线包含、笔、线段、中枢与走势，支持通达信、交易师、金字塔、大智慧</p>
+      </div>
+      <span class="arrow">&rarr;</span>
+    </a>
+
+    <a class="card" href="https://kldcty.github.io/fqbook/fqchan01/K线包含和分型处理/">
+      <div class="card-body">
+        <h2>fqchan01</h2>
+        <p>K 线包含处理与分型识别算法研究，探索消除分型顶点毛刺的新型处理方法</p>
+      </div>
+      <span class="arrow">&rarr;</span>
+    </a>
+
+    <a class="card" href="https://kldcty.github.io/fqbook/fqchan04/插件简介/">
+      <div class="card-body">
+        <h2>fqchan04</h2>
+        <p>番茄缠论股软插件，DLL 形式加载于主流股软，绘制笔、线段、中枢与走势</p>
+      </div>
+      <span class="arrow">&rarr;</span>
+    </a>
+
+    <a class="card" href="https://kldcty.github.io/fqbook/fqcopilot/缠论形态模型/">
+      <div class="card-body">
+        <h2>fqcopilot</h2>
+        <p>缠论形态模型库，提供标准化形态定义与识别，供量化策略调用</p>
+      </div>
+      <span class="arrow">&rarr;</span>
+    </a>
+
+    <p class="section-title">量化系统</p>
+
+    <a class="card" href="https://kldcty.github.io/fqbook/fqlite/Fqlite指南/">
+      <div class="card-body">
+        <h2>fqlite</h2>
+        <p>轻量级 Python 缠论量化框架，基于 uv 管理，适合策略研究与快速原型验证</p>
+      </div>
+      <span class="arrow">&rarr;</span>
+    </a>
+
+    <a class="card" href="https://kldcty.github.io/fqbook/freshquant/番茄量化系统使用指南/">
+      <div class="card-body">
+        <h2>freshquant</h2>
+        <p>番茄量化系统，支持股票、债券、ETF、期货多品种，命令行运维，Docker 部署</p>
+      </div>
+      <span class="arrow">&rarr;</span>
+    </a>
+
+    <p class="section-title">理论原文</p>
+
+    <a class="card" href="https://kldcty.github.io/fqbook/108/0187-486e105c01000461-001/">
+      <div class="card-body">
+        <h2>缠中说禅 108 课</h2>
+        <p>教你炒股票系列全文收录，从分型笔线段到走势中枢的完整理论体系</p>
+      </div>
+      <span class="arrow">&rarr;</span>
+    </a>
+
+    <p class="section-title">订阅</p>
+
+    <a class="card" href="https://kldcty.github.io/fqbook/订阅指南.html">
+      <div class="card-body">
+        <h2>订阅指南</h2>
+        <p>订阅计划、程序文件、更新推送机制、联系方式一览</p>
+      </div>
+      <span class="arrow">&rarr;</span>
+    </a>
+
+    <p class="section-title">更多</p>
+
+    <a class="card" href="https://kldcty.github.io/fqbook/">
+      <div class="card-body">
+        <h2>番茄量化文档站</h2>
+        <p>以上所有项目的完整文档入口</p>
+      </div>
+      <span class="arrow">&rarr;</span>
+    </a>
+
+    <a class="card" href="https://github.com/kldcty">
+      <div class="card-body">
+        <h2>GitHub</h2>
+        <p>开源项目与代码仓库</p>
+      </div>
+      <span class="arrow">&rarr;</span>
+    </a>
+  </main>
+
+  <footer>&copy; 2026 KLD</footer>
+</body>
+</html>
