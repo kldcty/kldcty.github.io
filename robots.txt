@@ -1,0 +1,13 @@
+# robots.txt — kldcty.github.io
+#
+# 站点结构
+#   /            单页导航首页
+#   /fqbook/     MkDocs 文档站（自带 sitemap.xml，由主题依 site_url 自动生成）
+#
+# GitHub Pages 对未知路径返回真正的 404（不走 try_files 兜底），
+# 故根层同样没有需要屏蔽的路径。
+
+User-agent: *
+Allow: /
+
+Sitemap: https://kldcty.github.io/sitemap.xml
